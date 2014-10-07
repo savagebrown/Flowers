@@ -4,11 +4,13 @@
 
 by Koray &amp; Norah &amp; You
 
-![screenshot](https://github.com/savagebrown/Flowers/raw/master/screenshot.png)
+![screenshot](https://github.com/savagebrown/Flowers/raw/master/screenshot-1.png)
 
-http://losingtrack.com/Flowers
+![screenshot](https://github.com/savagebrown/Flowers/raw/master/screenshot-2.png)
 
+Make your own. http://losingtrack.com/Flowers
 
+       _
      _( )_
     (_(%)_)
       (_)\
