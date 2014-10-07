@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		canvas {
+            margin-bottom: 20px;
+   			width: 1000px;
+    		height: 543px;
+    		-webkit-touch-callout: none;
+       		-webkit-user-select: none;
+        	-khtml-user-select: none;
+        	-moz-user-select: none;
+        	-ms-user-select: none;
+        	user-select: none;
+        	outline: none;
+        	border-radius: 3px;
+            box-shadow: 0 0 2px 2px #ccc;
+		}
+        figure {
+            width: 1000px;
+            margin: 40px auto 100px auto;
+            font-family: rooney-sans;
+        }
+        h1,p {
+            margin: 0;
+        }
+	</style>
+    <script src="//use.typekit.net/zha1kxp.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+</head>
+
+<body style="background-color:#f2f2f2;">
+
+	<script src="processing.min.js"></script>
+
+
+    <figure>
+        <canvas datasrc="flowers.pjs" width="1000" height="543">
+            Can't load canvas object
+        </canvas>
+        <figcaption>
+            <h1>Flowers</h1>
+            <a style="float:right;" href="http://github.com/savagebrown/Flowers"><img src="http://cdn.savagebrown.com/icon/weegit.png"></a>
+            <p style="margin-bottom:30px;">A collaborative digital sketch by <strong>Norah &amp; Koray</strong>&hellip;&amp; You</p>
+        </figcaption>
+    </figure>
+
+
+</body>
+</html>

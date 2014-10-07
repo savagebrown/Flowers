@@ -1,0 +1,92 @@
+/*
+
+     _( )_
+    (_(%)_)
+      (_)\
+          | __
+          |/_/
+          |
+          |
+
+    This software is free
+    like Flowers
+
+    Designed and coded by
+    Norah Girton &
+    Koray Girton
+
+*/
+
+PImage flower1;
+PImage flower2;
+PImage flower3;
+PImage flower4;
+PImage flower5;
+PImage flower6;
+
+int count = 0;
+int mode = 0;
+
+void setup() {
+
+  size(1000, 543);
+  flower1 = loadImage("flower1.png");
+  flower2 = loadImage("flower2.png");
+  flower3 = loadImage("flower3.png");
+  flower4 = loadImage("flower4.png");
+  flower5 = loadImage("flower5.png");
+  flower6 = loadImage("flower6.png");
+
+  noStroke();
+  background(0,100,0);
+
+}
+
+void draw() {
+
+    float size = random(50,125);
+
+    if (count == 1) {
+      image(flower1, mouseX-(size/2), mouseY-(size/2), size, size);
+    }
+
+    if (count == 2) {
+      image(flower2, mouseX-(size/2), mouseY-(size/2), size, size);
+    }
+
+    if (count == 3) {
+      image(flower3, mouseX-(size/2), mouseY-(size/2), size, size);
+    }
+
+    if(count == 4) {
+      image(flower4, mouseX-(size/2), mouseY-(size/2), size, size);
+    }
+
+    if(count == 5) {
+      image(flower5, mouseX-(size/2), mouseY-(size/2), size, size);
+    }
+
+    if(count == 6) {
+      image(flower6, mouseX-(size/2), mouseY-(size/2), size, size);
+      count=0;
+    }
+
+    if (mousePressed) {
+      rect( mouseX, mouseY, 3,3);
+    }
+
+    count++;
+}
+
+void mouseReleased() {
+
+
+  if (mode==1) {
+    tint(0, random(50,150));
+    mode=0;
+  } else {
+  	background(random(0,255),random(0,255),random(0,255));
+		noTint();
+		mode = 1;
+	}
+}
